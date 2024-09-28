@@ -42,14 +42,21 @@ img {
 }
 section {
     max-width: 37.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 0;
+    padding: 0 1rem;
 }
 article {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: center;
 }
 #lion p, #tiger p {
     color: #000;
+}
+#cougar .text {
+    color: #fff
 }
 
 /*Content*/
@@ -58,17 +65,16 @@ article {
     margin-top: 3rem;
 }
 .text {
-    background: #fff;
     color: #000;
-    padding: 0.5rem 2rem;
+    padding: 0 1rem 2rem 1rem;
     font-size: 18px;
     line-height: normal;
     box-sizing: border-box;
     margin: 0;
-    margin-bottom: 3rem;
+    margin: 1.5rem 0 0 0;
 }
-.text h2 {
-    text-align: center;
+.text p, .text h2 {
+    margin-bottom: 0.5rem;
 }
 
 /*Header and Footer*/
@@ -119,5 +125,5 @@ a:hover {
     color: #82E8FF;
 }
 #cougar a:hover {
-    color: #fff;
+    color: #e1f5ff;
 }
